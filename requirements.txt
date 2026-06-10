@@ -1,0 +1,33 @@
+```python
+   import sys
+   import os
+   from markitdown import MarkItDown
+
+   def converter_para_markdown(caminho_entrada, caminho_saida):
+       print(f"Convertendo: {caminho_entrada}...")
+       try:
+           md = MarkItDown()
+           resultado = md.convert(caminho_entrada)
+           
+           pasta_saida = os.path.dirname(caminho_saida)
+           if pasta_saida and not os.path.exists(pasta_saida):
+               os.makedirs(pasta_saida)
+               
+           with open(caminho_saida, "w", encoding="utf-8") as f:
+               f.write(resultado.text_content)
+               
+           print(f"Sucesso! Salvo em: {caminho_saida}")
+       except Exception as e:
+           print(f"Erro na conversão: {e}")
+           sys.exit(1)
+
+   if __name__ == "__main__":
+       if len(sys.argv) < 2:
+           sys.exit(1)
+       arquivo_input = sys.argv[1]
+       if len(sys.argv) > 2:
+           md_output = sys.argv[2]
+       else:
+           md_output = os.path.splitext(arquivo_input)[0] + ".md"
+           
+       converter_para_markdown(arquivo_input, md_output)
