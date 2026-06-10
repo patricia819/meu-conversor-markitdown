@@ -1,0 +1,170 @@
+
+<h2 class="sr-only">Análise de anúncios Meta Ads — 12 a 13 de maio de 2026. Campanha L6-Captação com 32 leads gerados e CPL médio de R$6,70.</h2>
+
+<div style="padding: 1rem 0 0.5rem;">
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 1.5rem;">
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 4px;">Total gasto</p>
+    <p style="font-size: 22px; font-weight: 500; margin: 0; color: var(--color-text-primary);">R$214</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 4px;">Leads gerados</p>
+    <p style="font-size: 22px; font-weight: 500; margin: 0; color: var(--color-text-primary);">32</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 4px;">CPL médio</p>
+    <p style="font-size: 22px; font-weight: 500; margin: 0; color: var(--color-text-primary);">R$6,70</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0 0 4px;">Período</p>
+    <p style="font-size: 22px; font-weight: 500; margin: 0; color: var(--color-text-primary);">2 dias</p>
+  </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.5rem;">
+
+<div>
+  <p style="font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em;">CPL por anúncio × conjunto</p>
+  <div style="position: relative; width: 100%; height: 280px;">
+    <canvas id="cplChart" role="img" aria-label="Gráfico de barras comparando CPL por anúncio e conjunto de anúncios. Melhor: AD01 seguidores R$2,75. Pior: AD01+IA Andrômeda R$12,67.">AD01 seguidores: R$2,75 | AD03 Cópia Andrômeda: R$3,65 | AD01+IA seguidores: R$4,29 | AD01 Andrômeda: R$4,78 | AD03 Cópia seguidores: R$5,83 | AD03 combo15k: R$10,90 | AD01+IA Andrômeda: R$12,67</canvas>
+  </div>
+</div>
+
+<div>
+  <p style="font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em;">Leads por conjunto de anúncios</p>
+  <div style="position: relative; width: 100%; height: 280px;">
+    <canvas id="leadsChart" role="img" aria-label="Gráfico de rosca mostrando distribuição de leads por conjunto. Seguidores lidera com 16 leads.">Seguidores: 16 leads | Andrômeda: 15 leads | Combo 15k: 1 lead</canvas>
+  </div>
+</div>
+
+</div>
+
+<p style="font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em;">Situação por anúncio</p>
+<div style="border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden;">
+<table style="width: 100%; font-size: 13px; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr style="background: var(--color-background-secondary);">
+    <th style="text-align: left; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 22%;">Anúncio</th>
+    <th style="text-align: left; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 26%;">Conjunto</th>
+    <th style="text-align: right; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 10%;">Gasto</th>
+    <th style="text-align: right; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 8%;">Leads</th>
+    <th style="text-align: right; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 10%;">CPL</th>
+    <th style="text-align: right; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 10%;">Freq.</th>
+    <th style="text-align: center; padding: 8px 12px; color: var(--color-text-secondary); font-weight: 500; width: 14%;">Status</th>
+  </tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+</div>
+
+<div style="margin-top: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+  <div style="border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem;">
+    <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 8px;"><i class="ti ti-thumb-up" aria-hidden="true" style="font-size: 15px; vertical-align: -2px; margin-right: 5px;"></i>Ações recomendadas</p>
+    <ul style="margin: 0; padding-left: 16px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">
+      <li><strong style="color: var(--color-text-primary);">Aumentar orçamento</strong> — AD01 no conjunto seguidores (CPL R$2,75, 10 leads em 2 dias)</li>
+      <li><strong style="color: var(--color-text-primary);">Pausar AD01 +IA</strong> no Combo 15k — frequência 8, zero leads, R$19 desperdiçados</li>
+      <li><strong style="color: var(--color-text-primary);">Pausar AD02</strong> (todos os conjuntos) — zero leads em todos, R$15,68 sem retorno</li>
+      <li><strong style="color: var(--color-text-primary);">Revisar criativo AD01 +IA</strong> no Andrômeda — CPL R$12,67 vs R$4,78 do AD01 no mesmo público</li>
+    </ul>
+  </div>
+  <div style="border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem;">
+    <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 8px;"><i class="ti ti-info-circle" aria-hidden="true" style="font-size: 15px; vertical-align: -2px; margin-right: 5px;"></i>Observações</p>
+    <ul style="margin: 0; padding-left: 16px; font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">
+      <li>Período de apenas 2 dias — otimizações devem ser avaliadas com mais dados</li>
+      <li>Conjunto <strong style="color: var(--color-text-primary);">seguidores</strong> é o mais eficiente: 16 leads totais com CPL consistente</li>
+      <li>AD02 nunca gerou 1 lead — problema provavelmente no criativo</li>
+      <li>Frequência do AD02 no Combo 15k (4,18) indica fadiga de público</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const rows = [
+  {ad:'AD01', conj:'Seguidores', gasto:27.46, leads:10, cpl:2.75, freq:1.20, status:'top'},
+  {ad:'AD03 Cópia', conj:'Andrômeda', gasto:10.94, leads:3, cpl:3.65, freq:1.03, status:'top'},
+  {ad:'AD01 +IA', conj:'Seguidores', gasto:17.15, leads:4, cpl:4.29, freq:1.10, status:'ok'},
+  {ad:'AD01', conj:'Andrômeda', gasto:33.45, leads:7, cpl:4.78, freq:1.0, status:'ok'},
+  {ad:'AD03 Cópia', conj:'Seguidores', gasto:11.66, leads:2, cpl:5.83, freq:1.12, status:'ok'},
+  {ad:'AD03', conj:'Combo 15k', gasto:10.90, leads:1, cpl:10.90, freq:3.69, status:'warn'},
+  {ad:'AD01 +IA', conj:'Andrômeda', gasto:63.33, leads:5, cpl:12.67, freq:1.007, status:'bad'},
+  {ad:'AD01 +IA', conj:'Combo 15k', gasto:19.29, leads:0, cpl:null, freq:8.0, status:'pause'},
+  {ad:'AD02', conj:'Combo 15k', gasto:4.75, leads:0, cpl:null, freq:4.18, status:'pause'},
+  {ad:'AD02 Cópia', conj:'Seguidores', gasto:3.68, leads:0, cpl:null, freq:1.03, status:'pause'},
+  {ad:'AD02 Cópia', conj:'Andrômeda', gasto:7.25, leads:0, cpl:null, freq:1.0, status:'pause'},
+  {ad:'AD01', conj:'Combo 15k', gasto:4.54, leads:0, cpl:null, freq:1.57, status:'low'},
+];
+
+const statusConfig = {
+  top:   {label:'✓ Top performer', bg:'#EAF3DE', color:'#3B6D11'},
+  ok:    {label:'OK', bg:'var(--color-background-secondary)', color:'var(--color-text-secondary)'},
+  warn:  {label:'⚠ Fadiga', bg:'#FAEEDA', color:'#854F0B'},
+  bad:   {label:'⚠ CPL alto', bg:'#FAECE7', color:'#993C1D'},
+  pause: {label:'✕ Pausar', bg:'#FCEBEB', color:'#A32D2D'},
+  low:   {label:'Baixo volume', bg:'var(--color-background-secondary)', color:'var(--color-text-secondary)'},
+};
+
+const tbody = document.getElementById('tableBody');
+rows.forEach((r, i) => {
+  const sc = statusConfig[r.status];
+  const tr = document.createElement('tr');
+  tr.style.borderTop = i > 0 ? '0.5px solid var(--color-border-tertiary)' : '';
+  tr.innerHTML = `
+    <td style="padding: 8px 12px; font-weight: 500; color: var(--color-text-primary);">${r.ad}</td>
+    <td style="padding: 8px 12px; color: var(--color-text-secondary);">${r.conj}</td>
+    <td style="padding: 8px 12px; text-align: right; color: var(--color-text-primary);">R$${r.gasto.toFixed(2)}</td>
+    <td style="padding: 8px 12px; text-align: right; font-weight: 500; color: var(--color-text-primary);">${r.leads}</td>
+    <td style="padding: 8px 12px; text-align: right; color: var(--color-text-primary);">${r.cpl ? 'R$'+r.cpl.toFixed(2) : '—'}</td>
+    <td style="padding: 8px 12px; text-align: right; color: ${r.freq >= 4 ? '#A32D2D' : 'var(--color-text-primary)'}; font-weight: ${r.freq >= 4 ? 500 : 400};">${r.freq.toFixed(2)}</td>
+    <td style="padding: 6px 12px; text-align: center;">
+      <span style="font-size: 11px; padding: 3px 8px; border-radius: 4px; background: ${sc.bg}; color: ${sc.color}; white-space: nowrap;">${sc.label}</span>
+    </td>`;
+  tbody.appendChild(tr);
+});
+
+const cplData = rows.filter(r => r.cpl).sort((a,b) => a.cpl - b.cpl);
+new Chart(document.getElementById('cplChart'), {
+  type: 'bar',
+  data: {
+    labels: cplData.map(r => r.ad + '\n' + r.conj),
+    datasets: [{
+      label: 'CPL (R$)',
+      data: cplData.map(r => r.cpl),
+      backgroundColor: cplData.map(r => r.cpl <= 4 ? '#1D9E75' : r.cpl <= 7 ? '#EF9F27' : '#E24B4A'),
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' R$' + ctx.parsed.x.toFixed(2) } } },
+    scales: {
+      x: { grid: { color: 'rgba(128,128,128,0.1)' }, ticks: { callback: v => 'R$'+v, font: { size: 11 } } },
+      y: { ticks: { font: { size: 11 } } }
+    }
+  }
+});
+
+new Chart(document.getElementById('leadsChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Seguidores (16)', 'Andrômeda (15)', 'Combo 15k (1)'],
+    datasets: [{
+      data: [16, 15, 1],
+      backgroundColor: ['#1D9E75', '#378ADD', '#888780'],
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: true, position: 'bottom', labels: { font: { size: 11 }, boxWidth: 12, padding: 12 } },
+      tooltip: { callbacks: { label: ctx => ' ' + ctx.label + ': ' + ctx.parsed + ' leads' } }
+    },
+    cutout: '60%'
+  }
+});
+</script>
